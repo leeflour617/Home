@@ -1,0 +1,112 @@
+/* src/components/BookmarkForm.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px; /* Limit maximum width */
+}
+
+.modalContent h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+}
+ .formGroup input[type="file"] {
+    width: 100%; /* Make file input take full width */
+    padding: 5px 0;
+}
+
+.iconOptions {
+    padding: 10px;
+    border: 1px dashed #eee;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.iconOptions span {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+ .iconOptions input[type="url"] {
+    margin-top: 10px;
+ }
+.iconPreview {
+    max-width: 32px;
+    max-height: 32px;
+    margin-top: 5px;
+    display: block;
+    border: 1px solid #eee;
+}
+ .formGroup small {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.formActions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.saveButton {
+    background-color: #28a745;
+    color: white;
+}
+.saveButton:hover {
+    background-color: #218838;
+}
+
+.cancelButton {
+    background-color: #6c757d;
+    color: white;
+}
+ .cancelButton:hover {
+    background-color: #5a6268;
+}
