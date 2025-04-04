@@ -1,0 +1,75 @@
+/* src/components/BookmarkItem.module.css */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  gap: 10px; /* Spacing between elements */
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; /* Prevents distortion */
+  flex-shrink: 0; /* Don't shrink the icon */
+}
+
+.details {
+  flex-grow: 1; /* Take available space */
+  overflow: hidden; /* Prevent long names/URLs from breaking layout */
+}
+
+.name {
+  font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.urls {
+  font-size: 0.9em;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.urls a {
+  color: #007bff;
+  text-decoration: none;
+}
+.urls a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  gap: 5px; /* Spacing between buttons */
+  flex-shrink: 0; /* Don't shrink action buttons */
+}
+
+.button {
+  padding: 4px 8px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+}
+.button:hover {
+  background-color: #e9ecef;
+}
+
+.deleteButton {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.deleteButton:hover {
+    background-color: #dc3545;
+    color: white;
+}
